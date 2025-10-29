@@ -22,16 +22,21 @@ video {
 
 /* Colores principales  */
 :root {
-    --celeste: #006bc2;
-    --celeste-claro: #006bc2;
-    --blanco: #bcd9ff;
-    --gris: #333;
+    --naranja: #ff6700;
+    --naranja-claro: #ff6600c9;
+    --blanco: #ffffff;
+    --blanco-opaco: #f5f5f5;
+    --negro: #000;
+    /* --gris: #333; */
+
+    --titulos: "Bebas Neue", sans-serif;
+    --parrafos: 'inter', sans-serif;
 }
 
 /* Header y Navegación */
 header {
-    background: var(--celeste);
-    color: white;
+    background: var(--negro);
+    color: var(--blanco);
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -63,7 +68,7 @@ nav {
 .menu-hamburguesa span {
     width: 25px;
     height: 3px;
-    background: white;
+    background: var(--blanco);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -76,41 +81,20 @@ nav {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--gris);
+    color: var(--naranja);
 }
 
-.carrito-icon {
-    position: relative;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.carrito-count {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #ff4444;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
 
 /* banner con foto de michi */
 .hero-completo { 
-    background: linear-gradient(135deg, var(--celeste-claro), var(--celeste));
-    color: white;
+    background: linear-gradient(135deg, var(--naranja-claro), var(--naranja));
+    color: var(--blanco);
     text-align: center;
     padding: 8rem 2rem 4rem;
     margin-top: 60px;
@@ -137,7 +121,7 @@ nav {
     max-width: 1200px;        /* Máximo ancho centrado */
     margin: 0 auto;
     padding: 2rem 1rem;       /* Padding interno */
-    background: #f5f5f5;
+    background: var(--blanco-opaco);
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -151,7 +135,7 @@ nav {
     box-sizing: border-box;
 }
 .carrusel-section h2 {
-    color: var(--celeste);
+    color: var(--naranja);
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
@@ -170,7 +154,7 @@ nav {
 
 .carrusel-item {
     min-width: 200px;
-    background: white;
+    background: var(--blanco);
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
@@ -191,13 +175,13 @@ nav {
 }
 
 .carrusel-item h4 {
-    color: var(--gris);
+    color: var(--negro);
     font-size: 1rem;
     margin-bottom: 0.3rem;
 }
 
 .precio-mini {
-    color: var(--celeste);
+    color: var(--naranja);
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -206,8 +190,8 @@ nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--celeste);
-    color: white;
+    background: var(--naranja);
+    color: var(--blanco);
     border: none;
     width: 40px;
     height: 40px;
@@ -219,7 +203,7 @@ nav {
 }
 
 .carrusel-btn:hover {
-    background: var(--celeste-claro);
+    background: var(--naranja-claro);
 }
 
 .carrusel-btn.prev {
@@ -238,7 +222,7 @@ section {
 }
 
 h2 {
-    color: var(--celeste);
+    color: var(--naranja);
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2rem;
@@ -253,7 +237,7 @@ h2 {
 }
 
 .card {
-    background: white;
+    background: var(--blanco);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -275,20 +259,20 @@ h2 {
 }
 
 .card h3 {
-    color: var(--gris);
+    color: var(--negro);
     margin-bottom: 0.5rem;
 }
 
 .precio {
-    color: var(--celeste);
+    color: var(--naranja);
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0.5rem 0;
 }
 
 .btn {
-    background: var(--celeste);
-    color: white;
+    background: var(--naranja);
+    color: var(--blanco);
     border: none;
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
@@ -299,13 +283,13 @@ h2 {
 }
 
 .btn:hover {
-    background: var(--celeste-claro);
+    background: var(--naranja-claro);
 }
 
 /* Sobre Nosotros */
 #sobre-nosotros {
-    background: var(--celeste-claro);
-    color: white;
+    background: var(--naranja-claro);
+    color: var(--blanco);
 }
 
 #sobre-nosotros p {
@@ -324,100 +308,102 @@ h2 {
 }
 
 .contacto-item {
-    background: var(--celeste-claro);
+    background: var(--naranja-claro);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    color: white;
+    color: var(--blanco);
 }
 
 .contacto-item h3 {
     margin-bottom: 1rem;
-    color: white;
+    color: var(--blanco);
 }
 
-/* Carrito Modal */
-.carrito-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 2000;
+/* Fondo oscuro semi-transparente detrás del modal */
+.info-modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  z-index: 1000; /* Encima de todo */
+  justify-content: center;
+  align-items: center;
 }
 
-.carrito-content {
-    background: white;
-    max-width: 500px;
-    margin: 5% auto;
-    padding: 2rem;
-    border-radius: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
+/* Contenedor del contenido del modal */
+.info-content {
+  background: var(--blanco);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: aparecer 0.3s ease-in-out;
+  position: relative;
+  text-align: center;
 }
 
-.carrito-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--celeste);
-    padding-bottom: 1rem;
+/* Imagen dentro del modal */
+.info-body img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.cerrar-carrito {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: var(--gris);
+/* Texto del modal */
+.info-body p {
+  margin: 5px 0;
 }
 
-.cerrar-carrito:hover {
-    color: #ff4444;
+/* Título */
+#infoTitulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--naranja);
 }
 
-.carrito-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
+/* Precio */
+#infoPrecio {
+  font-weight: bold;
+  color: var(--naranja-claro);
 }
 
-.carrito-item-info {
-    flex: 1;
+/* Encabezado del modal */
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
-.eliminar-item {
-    background: #ff4444;
-    color: white;
-    border: none;
-    padding: 0.3rem 0.8rem;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    margin-left: 1rem;
+/* Botón de cerrar */
+.cerrar-info {
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
 }
 
-.eliminar-item:hover {
-    background: #cc0000;
-}
-
-.carrito-total {
-    text-align: right;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: var(--celeste);
-    font-weight: bold;
-    padding-top: 1rem;
-    border-top: 2px solid var(--celeste);
+/* Animación */
+@keyframes aparecer {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Footer */
 footer {
-    background: var(--gris);
-    color: white;
+    background: var(--negro);
+    color: var(--blanco);
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
@@ -435,7 +421,7 @@ footer {
         top: 60px;
         left: 0;
         width: 100%;
-        background: var(--celeste);
+        background: var(--naranja);
         flex-direction: column;
         padding: 1rem;
     }
