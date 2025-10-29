@@ -425,6 +425,26 @@ h2 {
   }
 }
 
+/* Estilos para el botón rojo */
+.css-button-sharp--red {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+.css-button-sharp--red:hover {
+  background: #fff;
+  color: #d90429
+}
+
 /* Modal de más información */
 .modal {
   display: none; /* oculto por defecto */
