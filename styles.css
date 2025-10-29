@@ -9,6 +9,17 @@ body {
     line-height: 1.6;
 }
 
+/* Estilos para el video de fondo */
+video {
+  width: 190%;
+  height: 72vh;         
+  aspect-ratio: 16/91;  /* mantiene proporción widescreen */
+  object-fit: contain; /* ajusta sin recortar */
+    position: absolute;
+    display: block;
+}
+
+
 /* Colores principales  */
 :root {
     --celeste: #006bc2;
