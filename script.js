@@ -1,6 +1,6 @@
 // let carrito = [];
 let posicionCarrusel = 0;
-
+//HOLA
 function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('active');
 }
@@ -12,7 +12,7 @@ function mostrarInfo(nombre, descripcion, precio, imagen) {
   document.getElementById("infoPrecio").textContent = `$${precio.toFixed(2)}`;
   document.getElementById("infoImagen").src = imagen;
 
-  // Mostrar el modal WINONA
+  // Mostrar el modal
   const modal = document.getElementById("infoModal");
   modal.style.display = "flex";
 
