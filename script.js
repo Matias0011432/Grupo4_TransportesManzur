@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 function mostrarInfo(nombre, descripcion, precio, imagen) {
-  // Asignar los valores al modal
+  // Asignar los valores al modal WINONA
   document.getElementById("infoTitulo").textContent = nombre;
   document.getElementById("infoDescripcion").textContent = descripcion;
   document.getElementById("infoPrecio").textContent = `$${precio.toFixed(2)}`;
