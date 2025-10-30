@@ -432,6 +432,15 @@ button {
     color: white;
 }
 
+.correo{
+    max-width: 100%;
+}
+
+.redes-sociales a {
+    color: var(--blanco);
+font-size: 50px;
+margin: 0 5px;
+}
 /* ======== CONTENEDOR GENERAL ======== */
 #formulario-contacto {
     max-width: 650px;
