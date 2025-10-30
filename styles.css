@@ -325,6 +325,15 @@ h2 {
     color: white;
 }
 
+.correo{
+    max-width: 100%;
+}
+
+.redes-sociales a {
+    color: var(--blanco);
+font-size: 50px;
+margin: 0 5px;
+}
 /* Carrito Modal */
 .carrito-modal {
     display: none;
