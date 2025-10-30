@@ -372,8 +372,10 @@ h2 {
 font-size: 50px;
 margin: 0 5px;
 }
+
+
 /* ======== CONTENEDOR GENERAL ======== */
-#formulario-contacto {
+/* #formulario-contacto {
     max-width: 650px;
     margin: 3rem auto;
     padding: 2rem;
@@ -391,7 +393,7 @@ margin: 0 5px;
 }
 
 /* ======== FORMULARIO ======== */
-form {
+/* form {
     display: flex;
     flex-direction: column;
 }
@@ -424,13 +426,13 @@ textarea:focus {
     outline: none;
     border-color: var(--naranja);
     box-shadow: 0 0 5px rgba(0, 153, 255, 0.3);
-}
+} */
 
 /* ======== BOTÓN ======== */
-button {
+/* button {
     background-color: var(--naranja);
     color: white;
-}
+}  */
 
 .correo{
     max-width: 100%;
@@ -510,7 +512,7 @@ button {
 }
 
 button:hover {
-    background-color: #007acc;
+    background-color: var(--naranja-claro);
     transform: scale(1.03);
 }
 
