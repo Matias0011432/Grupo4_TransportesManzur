@@ -34,21 +34,35 @@
             </ul>
         </nav>
     </header>
-    <!-- banner con foto de michi MARIANELA-->
+
+    <!-- banner con foto de michi-->
     <section id="inicio" class="hero-completo" style="
     position: relative;
-    height: 600px; /* altura del hero */
-    background-image: url('https://citymagazine.b-cdn.net/wp-content/uploads/2017/04/cat-sleeps-on-laptop.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 ">
+        <!-- Video de fondo -->
+        <video autoplay muted loop playsinline style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        object-fit: cover;
+    ">
+            <source src="images\Video-camion.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
         <!-- Overlay oscuro -->
         <div style="
         position: absolute;
@@ -58,10 +72,9 @@
         z-index: 0;
     "></div>
 
-        <!-- Texto que aparece encima de la imagen MARIANELA-->
-        <h1 style="position: relative; z-index: 1; font-size: 3rem;">Bienvenidos a TechStore 2025</h1>
-        <p style="position: relative; z-index: 1; font-size: 1.5rem;">Los mejores productos tecnológicos al mejor precio
-        </p>
+        <!-- Texto encima del video -->
+        <h1 style="position: relative; z-index: 1; font-size: 3rem;">Bienvenidos a Transportes Manzur </h1>
+        <p style="position: relative; z-index: 1; font-size: 1.5rem;">Donde la palabra vale tanto como la carga</p>
     </section>
 
     <!-- Carrusel de Productos Destacados JOAQUIN-->
