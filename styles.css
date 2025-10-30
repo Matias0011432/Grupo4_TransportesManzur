@@ -384,7 +384,7 @@ margin: 0 5px;
 
 #formulario-contacto h2 {
     text-align: center;
-    color: #007acc;
+    color: var(--naranja);
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
@@ -422,13 +422,13 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #0099ff;
+    border-color: var(--naranja);
     box-shadow: 0 0 5px rgba(0, 153, 255, 0.3);
 }
 
 /* ======== BOTÓN ======== */
 button {
-    background-color: #0099ff;
+    background-color: var(--naranja);
     color: white;
 }
 
@@ -453,7 +453,7 @@ margin: 0 5px;
 
 #formulario-contacto h2 {
     text-align: center;
-    color: #007acc;
+    color: var(--naranja);
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
@@ -491,13 +491,13 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-color: #0099ff;
+    border-color: var(--naranja);
     box-shadow: 0 0 5px rgba(0, 153, 255, 0.3);
 }
 
 /* ======== BOTÓN ======== */
 button {
-    background-color: #0099ff;
+    background-color: var(--naranja);
     color: white;
     border: none;
     padding: 0.9rem 1.5rem;
