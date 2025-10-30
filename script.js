@@ -12,7 +12,7 @@ function mostrarInfo(nombre, descripcion, precio, imagen) {
   document.getElementById("infoPrecio").textContent = `$${precio.toFixed(2)}`;
   document.getElementById("infoImagen").src = imagen;
 
-  // Mostrar el modal
+  // Mostrar el modal WINONA
   const modal = document.getElementById("infoModal");
   modal.style.display = "flex";
 
