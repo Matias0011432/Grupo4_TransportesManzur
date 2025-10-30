@@ -1,6 +1,6 @@
 // let carrito = [];
 let posicionCarrusel = 0;
-
+//HOLA
 function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('active');
 }
